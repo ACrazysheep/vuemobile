@@ -1,0 +1,41 @@
+{
+  "name": "webpackdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "// 将来在外面开发的时候使用公司的或者第三方脚手架工具中会配置两个节点：dev:负责执行开发环境中的服务器打开 webpack-dev-server // dist:用来打包系统的 ，这个指令通常是 webpack -p --progress    // 这个dev的指令如何执行？ 在package.json相同目录下打开一个cmd控制面板，在面板中输入  npm run dev即可完成执行": "",
+    "dev": "webpack-dev-server --inline --hot --open --host 127.0.0.1 --port 7077",
+    "dist": "webpack -p --progress"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.5",
+    "html-webpack-plugin": "^2.28.0",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "node-sass": "^4.7.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "url-loader": "^0.6.2",
+    "vue-loader": "^11.3.4",
+    "vue-template-compiler": "^2.2.6",
+    "webpack": "^3.4.0",
+    "webpack-dev-server": "^2.6.1"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "babel-plugin-import": "^1.6.2",
+    "mint-ui": "^2.2.12",
+    "vue": "^2.2.6",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  }
+}
